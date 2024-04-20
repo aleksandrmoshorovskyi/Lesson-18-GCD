@@ -29,13 +29,32 @@
                                     <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WaR-TE-ZnM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxc-NF-K4u">
+                                <rect key="frame" x="4" y="326" width="385" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="04S-M6-64l"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="secondButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iw9-3g-Rhf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PTa-WJ-RN2" secondAttribute="bottom" constant="80" id="11W-fJ-z6f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PTa-WJ-RN2" secondAttribute="trailing" constant="20" id="T3e-d3-aoN"/>
+                            <constraint firstItem="Kxc-NF-K4u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z1o-zd-I5d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kxc-NF-K4u" secondAttribute="trailing" constant="4" id="duV-ej-KOA"/>
                             <constraint firstItem="PTa-WJ-RN2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="piR-rO-pdZ"/>
+                            <constraint firstItem="Kxc-NF-K4u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="uFN-YF-WgW"/>
                         </constraints>
                     </view>
                     <connections>
