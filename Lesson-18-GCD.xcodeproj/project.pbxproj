@@ -13,6 +13,7 @@
 		A80A270F2BD186F400DCB04E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A80A270E2BD186F400DCB04E /* Base */; };
 		A80A27112BD186F500DCB04E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80A27102BD186F500DCB04E /* Assets.xcassets */; };
 		A80A27142BD186F500DCB04E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A80A27132BD186F500DCB04E /* Base */; };
+		A80A271C2BD1882800DCB04E /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A271B2BD1882800DCB04E /* Printer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A80A27102BD186F500DCB04E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80A27132BD186F500DCB04E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A80A27152BD186F500DCB04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80A271B2BD1882800DCB04E /* Printer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Printer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				A80A27072BD186F400DCB04E /* AppDelegate.swift */,
 				A80A27092BD186F400DCB04E /* SceneDelegate.swift */,
+				A80A271B2BD1882800DCB04E /* Printer.swift */,
 				A80A270B2BD186F400DCB04E /* ViewController.swift */,
 				A80A270D2BD186F400DCB04E /* Main.storyboard */,
 				A80A27102BD186F500DCB04E /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80A271C2BD1882800DCB04E /* Printer.swift in Sources */,
 				A80A270C2BD186F400DCB04E /* ViewController.swift in Sources */,
 				A80A27082BD186F400DCB04E /* AppDelegate.swift in Sources */,
 				A80A270A2BD186F400DCB04E /* SceneDelegate.swift in Sources */,
