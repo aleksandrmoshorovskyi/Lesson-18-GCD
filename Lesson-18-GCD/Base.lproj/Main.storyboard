@@ -45,20 +45,57 @@
                                     <action selector="secondButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iw9-3g-Rhf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqm-61-Tdy">
+                                <rect key="frame" x="20" y="79" width="353" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="b7C-hJ-Q5c"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="thirdBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gut-i2-4Lz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aER-mP-LqE">
+                                <rect key="frame" x="175.66666666666666" y="194" width="42" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bdH-n8-aKG">
+                                <rect key="frame" x="20" y="624" width="353" height="4"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PTa-WJ-RN2" secondAttribute="bottom" constant="80" id="11W-fJ-z6f"/>
+                            <constraint firstItem="bdH-n8-aKG" firstAttribute="top" secondItem="Kxc-NF-K4u" secondAttribute="bottom" constant="98" id="8kD-V5-rSW"/>
+                            <constraint firstItem="iqm-61-Tdy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ArH-SU-nq3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bdH-n8-aKG" secondAttribute="trailing" constant="20" id="KcF-2b-nIj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PTa-WJ-RN2" secondAttribute="trailing" constant="20" id="T3e-d3-aoN"/>
+                            <constraint firstItem="iqm-61-Tdy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UO0-FS-XmE"/>
+                            <constraint firstItem="bdH-n8-aKG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WiY-5p-m5a"/>
                             <constraint firstItem="Kxc-NF-K4u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z1o-zd-I5d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iqm-61-Tdy" secondAttribute="trailing" constant="20" id="anP-J5-aPF"/>
+                            <constraint firstItem="aER-mP-LqE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aoy-FJ-2WD"/>
+                            <constraint firstItem="bdH-n8-aKG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cRA-vs-07t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kxc-NF-K4u" secondAttribute="trailing" constant="4" id="duV-ej-KOA"/>
+                            <constraint firstItem="aER-mP-LqE" firstAttribute="top" secondItem="iqm-61-Tdy" secondAttribute="bottom" constant="80" id="erH-ns-WuQ"/>
+                            <constraint firstItem="Kxc-NF-K4u" firstAttribute="top" secondItem="aER-mP-LqE" secondAttribute="bottom" constant="80" id="gTL-ZY-CIH"/>
                             <constraint firstItem="PTa-WJ-RN2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="piR-rO-pdZ"/>
                             <constraint firstItem="Kxc-NF-K4u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="uFN-YF-WgW"/>
+                            <constraint firstItem="PTa-WJ-RN2" firstAttribute="top" secondItem="bdH-n8-aKG" secondAttribute="bottom" constant="75" id="yn4-Ew-iq8"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btn" destination="PTa-WJ-RN2" id="9lt-dy-zAi"/>
+                        <outlet property="counterLabel" destination="aER-mP-LqE" id="dMa-wQ-pcx"/>
+                        <outlet property="progressView" destination="bdH-n8-aKG" id="wTr-Ca-aFH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -72,6 +109,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
